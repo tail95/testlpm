@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<!-- Date: 2017-05-23 -->
+<!-- Author : AMH -->
+<!-- Description : Automation checkstyle rules -->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+	<module name="TreeWalker">
+		<!-- Checks for blocks. -->
+		<module name="EmptyBlock">
+			<property name="option" value="text" />
+			<message key="block.empty" value="비어있는 {0} 블록입니다." />
+			<message key="block.noStatement" value="블록 안에는 최소한 하나 이상의 구문이 있어야 합니다." />
+			<property name="severity" value="info" />
+		</module>
+		<module name="LeftCurly">
+			<property name="option" value="eol" />
+			<message key="line.break.after" value="컬럼 {1}에서 ''{0}'' 뒤에 줄바꿈이 있어야 합니다." />
+			<message key="line.new" value="컬럼 {1}에서 ''{0}''은 줄바꿈 이후에 작성해야 합니다." />
+			<message key="line.previous" value="컬럼 {1}에서 ''{0}''은 이전 줄에 작성해야 합니다." />
+			<property name="severity" value="info" />
+		</module>
+		<module name="RightCurly">
+			<message key="line.alone" value=" 컬럼 {1}에서 해당 줄에 ''{0}''만 단독으로 입력되어야 합니다." />
+			<message key="line.break.before" value=" '' 컬럼 {1}에서 ''{0}''앞에 줄바꿈이 있어야 합니다." />
+			<message key="line.new" value="컬럼 {1}에서 ''{0}''는 새로운 줄에 작성되어야 합니다." />
+			<message key="line.same" value="컬럼 {1}에서 ''{0}''는 다음 멀티 블록이 시작되는 줄 앞에 있어야 합니다." />
+			<property name="severity" value="info" />
+		</module>
+		<module name="NeedBraces">
+			<property name="tokens" value="LITERAL_IF, LITERAL_ELSE" />
+			<property name="allowSingleLineStatement" value="false" />
+			<message key="needBraces" value="''{0}'' 문장에서 괄호(소, 중괄호)를 확인해주세요." />
+			<property name="severity" value="info" />
+		</module>
+
+		<!-- Checks for Class Design. -->
+		<module name="AnnotationLocation">
+			<property name="allowSamelineMultipleAnnotations" value="false" />
+			<property name="allowSamelineSingleParameterlessAnnotation"	value="false" />
+			<property name="allowSamelineParameterizedAnnotation" value="false" />
+			<message key="annotation.location" value="어노테이션 ''{0}''의 들여쓰기를 확인해주세요.(잘못 입력된 들여쓰기 레벨: {1}, 기대되는 레벨: {2})" />
+			<message key="annotation.location.alone" value="어노테이션 ''{0}''는 해당 줄에 단독으로 입력되어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+
+		<!-- Check for Coding. -->
+ 		<module name="Regexp">
+			<property name="format" value="System\.out\.println" />
+			<property name="illegalPattern" value="true" />
+			<property name="ignoreComments" value="true" />
+			<message key="duplicate.regexp" value="common의 println() 메소드를 사용해주세요." />
+			<message key="illegal.regexp" value="common의 println() 메소드를 사용해주세요." />
+			<message key="required.regexp" value="common의 println() 메소드를 사용해주세요." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="Regexp">
+			<property name="format" value="Thread\.sleep" />
+			<property name="illegalPattern" value="true" />
+			<property name="ignoreComments" value="true" />
+			<message key="duplicate.regexp" value="common의 sleep() 메소드를 사용해주세요." />
+			<message key="illegal.regexp" value="common의 sleep() 메소드를 사용해주세요." />
+			<message key="required.regexp" value="common의 sleep() 메소드를 사용해주세요." />
+			<property name="severity" value="warning" />
+		</module>
+		<!-- <module name="IllegalTokenText">
+			<property name="format" value="[//]+([*])" />
+			<property name="tokens" value="STRING_LITERAL, IDENT" />
+			<message key="illegal.token.text" value="xpath 복사/붙여넣기를 지양합니다." />
+			<property name="severity" value="warning" />
+		</module> -->
+		<!-- <module name="IllegalTokenText">
+			<property name="format" value="[-]+([>])" />
+			<property name="tokens" value="STRING_LITERAL, IDENT" />
+			<message key="illegal.token.text" value="람다식 사용을 지양합니다." />
+			<property name="severity" value="warning" />
+		</module> -->
+		<!-- <module name="IllegalTokenText">
+			<property name="format"
+				value="[//]+[a-z]+[/]+[a-z]+[/]+[a-z]+[/]+[a-z]+[/]+[a-z]|\[+[/]+[a-z]" />
+			<property name="tokens" value="STRING_LITERAL, IDENT" />
+			<message key="illegal.token.text" value="xpath를 길게 사용하는건 지양합니다." />
+			<property name="severity" value="warning" />
+		</module> -->
+		<module name="IllegalTokenText">
+			<property name="format" value="findElements\(.*\)" />
+			<property name="tokens" value="COMMENT_CONTENT, STRING_LITERAL, IDENT" />
+			<message key="illegal.token.text" value="common의 getElements()를 사용해주세요." />
+			<property name="severity" value="warning" />
+		</module>
+
+		<module name="IllegalTokenText">
+			<property name="format" value="findElement\(.*\)" />
+			<property name="tokens" value="COMMENT_CONTENT, STRING_LITERAL, IDENT" />
+			<message key="illegal.token.text" value="common의 getElement()를 사용해주세요." />
+			<property name="severity" value="warning" />
+		</module>
+
+		<!-- Checks for imports. -->
+		<module name="AvoidStarImport">
+			<property name="excludes" value="java.io,java.net,java.lang.Math" />
+			<property name="allowClassImports" value="false" />
+			<property name="allowStaticMemberImports" value="false" />
+			<message key="import.avoidStar" value="import 시에 ''.*''를 사용하는 것은 지양되어야 합니다 - {0}." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="RedundantImport">
+			<message key="import.duplicate"
+				value="중복된 import 라인입니다 Line {0,number,integer} - {1}." />
+			<message key="import.lang"
+				value="java.lang 패키지는 import하지 않더라도 사용할 수 있습니다, 삭제해주세요 - {0}." />
+			<message key="import.same"
+				value="동일한 패키지가 중복되어 import 되었습니다, 하나의 패키지명으로 정리해보세요 - {0}." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="UnusedImports">
+			<message key="import.unused" value="사용하지 않는 import 입니다, 필요 없는지 확인 후 제거해주세요 - {0}." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="CustomImportOrder">
+			<property name="separateLineBetweenGroups" value="true" />
+			<message key="custom.import.order" value=" ''{2}''의 import 순서가 잘못되었습니다. ''{0}''그룹에 입력되어야 합니다. expecting group ''{1}'' on this line - 이거 보이는 경우 제보좀 해주세요..." />
+			<message key="custom.import.order.line.separator" value="''{0}''은 이전의 import 그룹과 하나의 빈 줄로 구분되어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+
+		<!-- Checks for whitespace. -->
+		<module name="GenericWhitespace">
+			<message key="ws.followed" value="''{0}'' 뒤에 공백이 없어야 합니다." />
+			<message key="ws.illegalFollow" value="''{0}'' 뒤에 유효하지 않은 문자가 있습니다." />
+			<message key="ws.notPreceded" value=" ''{0}'' 앞에 공백이 있어야 합니다." />
+			<message key="ws.preceded" value=" ''{0}'' 앞에 공백이 없어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="EmptyLineSeparator">
+			<property name="tokens" value="PACKAGE_DEF" />
+			<message key="empty.line.separator" value="''{0}'' 앞은 하나의 빈 줄로 분리되어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="MethodParamPad">
+			<message key="line.previous" value=" ''{0}''는 이전 줄에 있어야 합니다." />
+			<message key="ws.notPreceded" value=" ''{0}''앞에 공백이 있어야 합니다." />
+			<message key="ws.preceded" value=" ''{0}''앞에 공백이 없어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="OperatorWrap">
+			<property name="tokens" value="ASSIGN, COLON, PLUS, MINUS" />
+			<property name="option" value="eol" />
+			<message key="line.new" value="''{0}''는 새로운 줄에서 시작되어야 합니다." />
+			<message key="line.previous" value="''{0}''는 이전 줄에 있어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="ParenPad">
+			<message key="ws.followed" value="''{0}'' 뒤에 공백이 없어야 합니다." />
+			<message key="ws.notFollowed" value="''{0}'' 뒤에 공백이 있어야 합니다." />
+			<message key="ws.notPreceded" value="''{0}'' 앞에 공백이 있어야 합니다." />
+			<message key="ws.preced" value="''{0}'' 앞에 공백이 없어야 합니다." />
+			<property name="severity" value="info" />
+		</module>
+		<module name="NoLineWrap">
+			<property name="tokens" value="IMPORT, PACKAGE_DEF" />
+			<message key="no.line.wrap" value="''{0}'' 구문은 줄 바꿈되지 않아야합니다." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="WhitespaceAfter">
+			<property name="tokens" value="COMMA, SEMI" />
+			<message key="ws.notFollowed" value="''{0}'' 뒤에 공백이 있어야 합니다." />
+			<message key="ws.typeCast" value="타입변환 후 뒤에 공백이 있어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+		<module name="WhitespaceAround">
+			<message key="ws.notFollowed" value="''{0}'' 뒤에 공백이 있어야 합니다." />
+			<message key="ws.notPreceded" value="''{0}'' 앞에 공백이 있어야 합니다." />
+			<property name="severity" value="warning" />
+		</module>
+
+		<!-- Checks for Naming Conventions. -->
+		<!-- See http://checkstyle.sf.net/config_naming.html -->
+		<module name="PackageName">
+			<property name="format" value="([a-z]|.)+" />
+			<message key="name.invalidPattern"
+				value="패키지 ''{0}''의 이름은 소문자로만 구성되어야 합니다. ex) com.puppycrawl.tools" />
+			<property name="severity" value="error" />
+		</module>
+		<!-- <module name="ClassTypeParameterName">
+			<property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)" />
+			<property name="severity" value="warning" />
+			<message key="name.invalidPattern"
+				value="클래스명 '' {0} ''은(는) 파스칼표기법과 일치해야 합니다. &lt;br&gt;파스칼표기법 : 클래스명 첫글자를 대문자로 한다. &lt;br&gt; EX) TagLibrary" />
+		</module> -->
+		<!-- <module name="MethodName">
+			<property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$" />
+			<message key="method.name.equals.class.name" value="메서드명 '' {0} ''은(는) 클래스 이름과 같지 않아야 합니다." />
+			<message key="name.invalidPattern"
+				value="메서드명 '' {0} ''은(는) 카멜표기법과 일치해야 합니다. &lt;br&gt;카멜표기법 : 두단어 이상의 변수명으로 생성시 두번째 단어는 대문자로 시작해야 합니다. &lt;br&gt; EX) removeDate()" />
+			<property name="severity" value="warning" />
+		</module> -->
+		<!-- <module name="MemberName">
+			<property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9]*$" />
+			<message key="name.invalidPattern"
+				value="변수명 '' {0} ''은(는) 카멜표기법과 일치해야 합니다. &lt;br&gt;카멜표기법 : 두단어 이상의 변수명으로 생성시 두번째 단어는 대문자로 시작해야 합니다. &lt;br&gt; EX) guestBook" />
+			<property name="severity" value="warning" />
+		</module> -->
+		<module name="ConstantName">
+			<property name="format" value="([A-Z]|\_)+" />
+			<message key="name.invalidPattern"
+				value="상수 ''{0}''의 이름은 알파벳 대문자와 ''_''의 조합으로 변경해야 합니다.   ex) STATIC_CONSTANT" />
+			<property name="severity" value="warning" />
+		</module>
+	</module>
+</module>

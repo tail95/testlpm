@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>LBizQA</groupId>
+	<artifactId>MKTPAutombation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	 
+	<packaging>jar</packaging>
+	
+	<name>PCWeb</name>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>		
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<repositories>
+		<repository>
+			<id>maven-repo</id>
+			<url>http://repo2.maven.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>releases</id>
+			<url>http://10.168.252.200:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<repository>
+			<id>snapshots</id>
+			<url>http://10.168.252.200:8081/nexus/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.sqa.nts</groupId>
+			<artifactId>stac-client</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+	    <scope>test</scope>
+		</dependency>
+		  
+		<dependency>
+		    <groupId>com.intuit.karate</groupId>
+		    <artifactId>karate-core</artifactId>
+		    <version>1.2.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.intuit.karate</groupId>
+		    <artifactId>karate-apache</artifactId>
+		    <version>0.9.6</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>com.intuit.karate</groupId>
+		    <artifactId>karate-junit4</artifactId>
+		    <version>1.2.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.github.cliftonlabs</groupId>
+		    <artifactId>json-simple</artifactId>
+		    <version>4.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>27.0-jre</version>
+		</dependency>
+
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<suiteXmlFiles>
+						<suiteXmlFile>suite_mw.xml</suiteXmlFile>						
+					</suiteXmlFiles>					
+					<argLine>
+						-Xms256m -Xmx512m<!-- -XX:MaxPermSize=128m -->
+						-Dfile.encoding=UTF-8
+					</argLine>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

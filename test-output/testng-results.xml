@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-10T14:57:35 KST" name="Default suite" finished-at="2023-07-10T14:58:08 KST" duration-ms="33001">
+    <groups>
+    </groups>
+    <test started-at="2023-07-10T14:57:35 KST" name="Default test" finished-at="2023-07-10T14:58:08 KST" duration-ms="33001">
+      <class name="com.nts.sqa.lpmtest.Application">
+        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:34 KST" name="beforeSuite" finished-at="2023-07-10T14:57:35 KST" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@465d1345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setupClass(org.testng.ITestContext)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:35 KST" name="setupClass" finished-at="2023-07-10T14:57:35 KST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@465d1345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:35 KST" name="setUp" finished-at="2023-07-10T14:57:40 KST" duration-ms="5004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:40 KST" name="beforeMethod" finished-at="2023-07-10T14:57:40 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s01() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="s01()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:40 KST" name="s01" description="Center Home에서 로그인 페이지로 이동" finished-at="2023-07-10T14:57:42 KST" duration-ms="2411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s01 -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:43 KST" name="afterMethod" finished-at="2023-07-10T14:57:43 KST" duration-ms="195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s01() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s01 status=SUCCESS method=Application.s01()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="s02()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:43 KST" name="s02" description="login" finished-at="2023-07-10T14:57:46 KST" duration-ms="3042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s02 -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:43 KST" name="beforeMethod" finished-at="2023-07-10T14:57:43 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s02() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:46 KST" name="afterMethod" finished-at="2023-07-10T14:57:46 KST" duration-ms="30" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s02() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s02 status=SUCCESS method=Application.s02()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:46 KST" name="beforeMethod" finished-at="2023-07-10T14:57:46 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s03() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="s03()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:46 KST" name="s03" description="change Language Chinese to English" finished-at="2023-07-10T14:57:48 KST" duration-ms="2132" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Please let TestNG know about com.ntscorp.auto_client.verity.TestMethodListener listener for verify statements to work. For more information go to http://testng.org/doc/documentation-main.html#testng-listeners]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Please let TestNG know about com.ntscorp.auto_client.verity.TestMethodListener listener for verify statements to work. For more information go to http://testng.org/doc/documentation-main.html#testng-listeners
+at com.ntscorp.auto_client.verity.Verify.addToErrorBuffer(Verify.java:588)
+at com.ntscorp.auto_client.verity.Verify.verifyTrue(Verify.java:28)
+at com.nts.sqa.lpmtest.Application.s03(Application.java:74)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s03 -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:48 KST" name="afterMethod" finished-at="2023-07-10T14:57:49 KST" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s03() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s03 status=FAILURE method=Application.s03()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="s04()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:49 KST" name="s04" description="Enter MKTP" finished-at="2023-07-10T14:57:53 KST" duration-ms="4942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s04 -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:49 KST" name="beforeMethod" finished-at="2023-07-10T14:57:49 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s04() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:54 KST" name="afterMethod" finished-at="2023-07-10T14:57:54 KST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s04() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s04 status=SUCCESS method=Application.s04()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="s05()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:54 KST" name="s05" description="Apply SPC_default" finished-at="2023-07-10T14:57:57 KST" duration-ms="3713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s05 -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:54 KST" name="beforeMethod" finished-at="2023-07-10T14:57:54 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s05() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:57 KST" name="afterMethod" finished-at="2023-07-10T14:57:57 KST" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s05() throws java.net.MalformedURLException,java.io.IOException,com.tool.testrail.APIException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s05 status=SUCCESS method=Application.s05()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:57 KST" name="beforeMethod" finished-at="2023-07-10T14:57:57 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s06()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="s06()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:57:57 KST" name="s06" description="select period" finished-at="2023-07-10T14:58:01 KST" duration-ms="3803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s06 -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:01 KST" name="afterMethod" finished-at="2023-07-10T14:58:01 KST" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s06()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s06 status=SUCCESS method=Application.s06()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="s07()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:01 KST" name="s07" description="select product type" finished-at="2023-07-10T14:58:05 KST" duration-ms="3177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s07 -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:01 KST" name="beforeMethod" finished-at="2023-07-10T14:58:01 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s07()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:05 KST" name="afterMethod" finished-at="2023-07-10T14:58:05 KST" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s07()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s07 status=SUCCESS method=Application.s07()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:05 KST" name="beforeMethod" finished-at="2023-07-10T14:58:05 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s08()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="s08()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:05 KST" name="s08" description="payment" finished-at="2023-07-10T14:58:06 KST" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s08 -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:06 KST" name="afterMethod" finished-at="2023-07-10T14:58:06 KST" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s08()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s08 status=SUCCESS method=Application.s08()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="s09()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:06 KST" name="s09" description="API Payment" finished-at="2023-07-10T14:58:08 KST" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s09 -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:06 KST" name="beforeMethod" finished-at="2023-07-10T14:58:06 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s09()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:08 KST" name="afterMethod" finished-at="2023-07-10T14:58:08 KST" duration-ms="22" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nts.sqa.lpmtest.Application.s09()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=s09 status=SUCCESS method=Application.s09()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:08 KST" name="tearDownClass" finished-at="2023-07-10T14:58:08 KST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.nts.sqa.lpmtest.Application@427b5f92]" started-at="2023-07-10T14:58:08 KST" name="afterSuite" finished-at="2023-07-10T14:58:08 KST" duration-ms="58" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@465d1345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.nts.sqa.lpmtest.Application -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
